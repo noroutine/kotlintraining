@@ -9,6 +9,7 @@ class NumberCheckerTest {
         val numberChecker = NumberChecker()
         val userInput = mockk<Int>()
         every { userInput } returns 2
+        assertEquals(userInput, 2)
 
         val result = numberChecker.checkNumber(userInput)
 
