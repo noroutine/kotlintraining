@@ -170,3 +170,10 @@ data class Microphone(
 //
 
 //fun main() = readln().split(" ").map { it.reversed() }.find { it[0] == 'm' }.run(::println)
+
+fun main() {
+    val listOfNames = listOf("Pablo", "John", "Jane", "Mary", "Peter")
+    println(
+        listOfNames.firstNotNullOf { item -> item.length.takeIf { it >= 5 } }
+    )
+}
