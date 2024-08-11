@@ -163,10 +163,10 @@ data class Microphone(
 //fun main() = readln().split(" ").map { it.toDouble() }
 //    .run { println("${firstOrNull { it >= 5.0 }}:${max()}") }
 
-fun main() = readln().split(" ").map { it.split("-") }
-        .findLast { it[1].toInt() > 200 }
-        .let { it?.get(0) ?: "No ship found" }
-        .run(::println)
+//fun main() = readln().split(" ").map { it.split("-") }
+//        .findLast { it[1].toInt() > 200 }
+//        .let { it?.get(0) ?: "No ship found" }
+//        .run(::println)
+//
 
-
-
+//fun main() = readln().split(" ").map { it.reversed() }.find { it[0] == 'm' }.run(::println)
