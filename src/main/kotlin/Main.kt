@@ -1,8 +1,6 @@
 /**
  * We want our dots to walk a narrow safe line and reach home!
  */
-import java.io.FileReader
-import java.io.FileWriter
 import java.util.concurrent.Semaphore
 
 // Let's create a single mutex
@@ -182,20 +180,34 @@ data class Microphone(
 
 //fun main() = readln().split(" ").find { it.first() == 'j' && it.last() == 'e' }.run(::println)
 
+//fun main() {
+//    FileWriter("file.txt").use {
+//        it.write("Kotlin\nJava\nGo\nC++\nC#")
+//    }
+//    val file = FileReader("file.txt")
+//    file.use {
+//        val iterator = it.readLines().iterator()
+//        while (iterator.hasNext()) {
+//            println(iterator.next())
+//        }
+//    }
+//    try {
+//        println(file.ready())
+//    } catch (e: Exception) {
+//        println(e.message)
+//    }
+//}
+
+//fun solution(names: List<String>): Int = names
+//    .mapIndexedNotNull { i, name ->
+//        if (i % 2 == 1 && name.startsWith('T')) i else null
+//    }.first()
+
+//
+//fun main() {
+//    println(solution("Test Kora Terra Tetta Garry".split(" ")))
+//}
+
 fun main() {
-    FileWriter("file.txt").use {
-        it.write("Kotlin\nJava\nGo\nC++\nC#")
-    }
-    val file = FileReader("file.txt")
-    file.use {
-        val iterator = it.readLines().iterator()
-        while (iterator.hasNext()) {
-            println(iterator.next())
-        }
-    }
-    try {
-        println(file.ready())
-    } catch (e: Exception) {
-        println(e.message)
-    }
+    // write your code here
 }
