@@ -208,6 +208,9 @@ data class Microphone(
 //    println(solution("Test Kora Terra Tetta Garry".split(" ")))
 //}
 
-fun main() {
-    // write your code here
-}
+//fun main() = IntArray(readln().toInt()) { readln().toInt() }.sum().run(::println)
+
+@Suppress()
+fun main() = println("My name is John Connor, they tried to murder me before I was born, " +
+        "when I was 13 they tried again. Machines from the future. Terminators.")
+
